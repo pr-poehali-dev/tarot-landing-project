@@ -15,6 +15,13 @@ const Index = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const { toast } = useToast();
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const timeSlots = [
     '10:00', '11:00', '12:00', '13:00', '14:00', 
     '15:00', '16:00', '17:00', '18:00', '19:00'
@@ -122,11 +129,11 @@ const Index = () => {
       <nav className="relative z-10 container mx-auto px-4 py-6 flex justify-between items-center">
         <div className="text-2xl font-bold font-serif text-accent">✨ Таролог онлайн</div>
         <div className="hidden md:flex gap-8">
-          <a href="#about" className="hover:text-secondary transition-colors">Обо мне</a>
-          <a href="#services" className="hover:text-secondary transition-colors">Услуги</a>
-          <a href="#spreads" className="hover:text-secondary transition-colors">Расклады</a>
-          <a href="#reviews" className="hover:text-secondary transition-colors">Отзывы</a>
-          <a href="#contact" className="hover:text-secondary transition-colors">Контакты</a>
+          <button onClick={() => scrollToSection('about')} className="hover:text-secondary transition-colors">Обо мне</button>
+          <button onClick={() => scrollToSection('services')} className="hover:text-secondary transition-colors">Услуги</button>
+          <button onClick={() => scrollToSection('spreads')} className="hover:text-secondary transition-colors">Расклады</button>
+          <button onClick={() => scrollToSection('reviews')} className="hover:text-secondary transition-colors">Отзывы</button>
+          <button onClick={() => scrollToSection('contact')} className="hover:text-secondary transition-colors">Контакты</button>
         </div>
       </nav>
 
