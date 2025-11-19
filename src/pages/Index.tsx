@@ -134,10 +134,10 @@ const Index = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           <div className="text-6xl mb-6 animate-float">✨</div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-accent via-secondary to-accent bg-clip-text text-transparent">
-            Раскройте тайны судьбы
+            Читаю карты Таро
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            Профессиональные таро-консультации для тех, кто ищет ответы
+            консультации и расклады онлайн
           </p>
           <Dialog open={isBookingOpen} onOpenChange={setIsBookingOpen}>
             <DialogTrigger asChild>
