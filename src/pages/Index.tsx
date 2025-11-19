@@ -350,10 +350,10 @@ const Index = () => {
                 <Icon name="Send" size={20} />
               </Button>
               <Button variant="outline" size="icon" className="rounded-full">
-                <Icon name="Instagram" size={20} fallback="Camera" />
+                <Icon name="MessageCircle" size={20} />
               </Button>
               <Button variant="outline" size="icon" className="rounded-full">
-                <Icon name="Facebook" size={20} fallback="Share2" />
+                <Icon name="Users" size={20} />
               </Button>
             </div>
           </div>
