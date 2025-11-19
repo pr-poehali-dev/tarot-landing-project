@@ -120,7 +120,7 @@ const Index = () => {
       <div className="fixed inset-0 bg-[url('https://cdn.poehali.dev/projects/82f88a49-2f9e-4a48-afd6-8af45311e3cb/files/91ac6325-de09-44d1-80f5-a0ebc96b0367.jpg')] bg-cover bg-center opacity-20 pointer-events-none" />
       
       <nav className="relative z-10 container mx-auto px-4 py-6 flex justify-between items-center">
-        <div className="text-2xl font-bold font-serif text-accent">✨ Таро</div>
+        <div className="text-2xl font-bold font-serif text-accent">✨ Таролог онлайн</div>
         <div className="hidden md:flex gap-8">
           <a href="#about" className="hover:text-secondary transition-colors">Обо мне</a>
           <a href="#services" className="hover:text-secondary transition-colors">Услуги</a>
